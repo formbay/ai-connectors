@@ -1,0 +1,24 @@
+{
+  "name": "formbay-ai-connectors",
+  "owner": {
+    "name": "Formbay Trading Pty Ltd",
+    "email": "support@formbay.com.au",
+    "url": "https://github.com/formbay/ai-connectors"
+  },
+  "metadata": {
+    "description": "Formbay's partner AI integrations, delivered as Claude plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pylon-connector",
+      "source": "./plugins/pylon-connector",
+      "description": "Read Pylon (app.getpylon.com) solar-proposal data and push projects into the Formbay job queue via the ext-job-push MCP server.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Formbay Trading Pty Ltd",
+        "email": "support@formbay.com.au"
+      }
+    }
+  ]
+}
