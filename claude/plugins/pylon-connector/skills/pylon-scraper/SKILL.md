@@ -3,7 +3,7 @@ name: pylon-scraper
 description: >-
   Read project data from the Pylon web app (app.getpylon.com) via the Claude in
   Chrome browser tools, AND push a Pylon project into the Formbay job queue — or
-  look up existing Formbay jobs — via the ext-job-push MCP server. Use whenever
+  look up existing Formbay jobs — via the fb-job-push MCP server. Use whenever
   the user wants to find, list, or extract data from Pylon projects/proposals —
   especially project ADDRESS and NUMBER OF STCs, plus system size, price, and
   panel model. ALSO use it to turn a Pylon project into a Formbay installation
@@ -23,7 +23,7 @@ How to read the Pylon solar-proposal web app (`app.getpylon.com`) and pull out
 project data — primarily **project address** and **number of STCs** — and,
 optionally, **push a project into the Formbay job queue** as an installation
 job, or **look up jobs already in the Formbay portal**, via the
-`ext-job-push` MCP server (see section 8).
+`fb-job-push` MCP server (see section 8).
 
 ## 0. Key facts about this app
 
@@ -154,9 +154,9 @@ Library had one Active project:
 |---------|------|-------------|
 | 3 Kenna Place, Cromer New South Wales 2099 | 12 | 1.85 kW |
 
-## 8. Formbay jobs — push & look up (`ext-job-push` MCP server)
+## 8. Formbay jobs — push & look up (`fb-job-push` MCP server)
 
-Use the **`ext-job-push`** MCP server for two things:
+Use the **`fb-job-push`** MCP server for two things:
 
 - **Looking up jobs** already in the Formbay portal — "list Formbay jobs", "get
   job 1140167", "is there already a job for this address", "who am I logged in

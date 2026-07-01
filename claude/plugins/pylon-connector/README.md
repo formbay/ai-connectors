@@ -16,17 +16,17 @@ target site is `app.getpylon.com` or the user mentions Pylon / getpylon / STCs /
   JSON API, so the skill scrapes the rendered page rather than calling an
   `/api/` endpoint.
 - **Pushes a project into the Formbay job queue** as an installation job, or
-  **looks up existing jobs**, via the `ext-job-push` MCP server. Looking jobs up
+  **looks up existing jobs**, via the `fb-job-push` MCP server. Looking jobs up
   (`list_jobs` / `get_job` / `whoami`) is read-only; `push_job` is a **write**
   action and is always confirmed with the exact payload before it runs.
 
 ## Requirements
 
 - **Claude in Chrome** browser tools, with a browser already logged in to Pylon.
-- Access to the Formbay **`ext-job-push`** MCP server (declared in
+- Access to the Formbay **`fb-job-push`** MCP server (declared in
   [.mcp.json](.mcp.json)).
 
-The `ext-job-push` MCP server is configured in [.mcp.json](.mcp.json) at
+The `fb-job-push` MCP server is configured in [.mcp.json](.mcp.json) at
 `https://mcp.13-236-107-181.nip.io/mcp`. It is authenticated — you need valid,
 active Formbay credentials for the job tools (`list_jobs` / `get_job` /
 `push_job` / `whoami`) to work.
@@ -36,7 +36,7 @@ active Formbay credentials for the job tools (`list_jobs` / `get_job` /
 ```
 pylon-connector/
 ├── .claude-plugin/plugin.json     # plugin manifest
-├── .mcp.json                      # ext-job-push MCP server (URL TBD)
+├── .mcp.json                      # fb-job-push MCP server (URL TBD)
 ├── skills/
 │   └── pylon-scraper/SKILL.md     # the skill
 └── README.md
